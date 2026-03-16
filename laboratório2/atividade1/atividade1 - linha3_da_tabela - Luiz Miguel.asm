@@ -8,7 +8,7 @@ blt x2,x3,soma
 beq zero,zero,fim
 
 soma: add x3,x1,x2
-fim:  add zero,zero,zero
+fim:  halt
 
 a: .word 0x19
 b: .word 0xc
