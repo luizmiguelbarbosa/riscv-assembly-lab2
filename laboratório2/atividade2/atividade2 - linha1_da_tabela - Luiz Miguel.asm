@@ -8,11 +8,9 @@ sub x3,x1,x2
 
 beq zero,zero,fim
 
-soma:
-add x3,x1,x2
+soma: add x3,x1,x2
 
-fim:
-add zero,zero,zero
+fim: halt
 
 a: .word 0x6
 b: .word 0xF
