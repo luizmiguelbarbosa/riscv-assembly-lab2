@@ -1,18 +1,16 @@
 lw x1,a
 lw x2,b
 lw x3,m
-add x3, zero,x1
+add x3,zero,x1
 
 blt x2,x3,soma
-
 sub x3,x1,x2
+
 beq zero,zero,fim
 
-soma:
-add x3,x1,x2
+soma: add x3,x1,x2
 
-fim:
-add zero,zero,zero
+fim: halt
 
 a: .word 0x19
 b: .word 0xc
