@@ -36,7 +36,8 @@ The lab focuses on fundamental low-level concepts such as:
 • Arithmetic operations<br>
 • Register manipulation<br>
 • Control flow implementation<br>
-• Memory addressing and iteration
+• Memory addressing and iteration<br>
+• Input/Output handling
 </p>
 
 <hr>
@@ -86,12 +87,32 @@ Focuses on <strong>string output</strong> using loops and memory traversal, demo
 
 <h3>Activity 5</h3>
 <p>
-(To be described)
+Implements a <strong>keyboard input loop (loopback)</strong> that continuously reads characters and echoes them to the output.
+</p>
+
+<p>
+The program is modified to <strong>terminate execution when the character '*'</strong> is detected, requiring the use of 
+<strong>ASCII value comparison</strong> and conditional branching.
 </p>
 
 <h3>Activity 6</h3>
 <p>
-(To be described)
+Implements an <strong>input/output control system</strong> in a virtual Arduino environment using GPIO manipulation.
+</p>
+
+<p>
+The system behavior:
+</p>
+
+<p>
+• 6 LEDs connected to GPIO pins 2 through 7<br>
+• The system starts with LED on pin 2 turned on<br>
+• When a button is pressed, the current LED turns off and the next one turns on<br>
+• The sequence continues until LED 7, where the system stops
+</p>
+
+<p>
+This activity explores <strong>bit shifting operations</strong>, <strong>GPIO control</strong>, and <strong>event-driven logic</strong>.
 </p>
 
 <hr>
@@ -99,11 +120,13 @@ Focuses on <strong>string output</strong> using loops and memory traversal, demo
 <h2>🚀 How to Run</h2>
 
 <pre>
-1. Assemble the code using a RISC-V assembler (e.g., RARS or SPIKE)
+1. Open a RISC-V simulator (e.g., RARS)
 
-2. Load the .asm file
+2. Load the desired .asm file
 
-3. Run the program and observe register/memory behavior
+3. Assemble and run the program
+
+4. Observe register and memory behavior
 </pre>
 
 <hr>
@@ -116,7 +139,10 @@ Focuses on <strong>string output</strong> using loops and memory traversal, demo
 • Arithmetic operations (add, sub)<br>
 • Register usage conventions<br>
 • Loops and control flow<br>
-• Memory addressing
+• Memory addressing<br>
+• ASCII manipulation<br>
+• Input/Output (I/O) operations<br>
+• Bitwise and shift instructions
 </p>
 
 <hr>
@@ -128,7 +154,7 @@ One of the main challenges in this lab was translating high-level logic (pseudo-
 </p>
 
 <p>
-Additionally, careful handling of registers and branching conditions was required to ensure correct program flow.
+Additional challenges included handling input/output operations, working with ASCII values, and implementing correct control flow using branching instructions.
 </p>
 
 <hr>
