@@ -1,9 +1,9 @@
 <h1 align="center">
-  RISC-V Assembly Lab 2 
+  RISC-V Assembly Lab 2 🧠
 </h1>
 
 <p align="center">
-  A set of RISC-V assembly exercises developed for the Computer Architecture course at UFPE using CompSim and Arduino Virtual.
+  A set of RISC-V assembly exercises developed for the Computer Architecture course at UFPE using the CompSim simulator.
 </p>
 
 <hr>
@@ -28,16 +28,8 @@ This repository contains a set of <strong>RISC-V assembly programming exercises<
 </p>
 
 <p>
-The lab focuses on fundamental low-level concepts such as:
-</p>
-
-<p>
-• Conditional branching<br>
-• Arithmetic operations<br>
-• Register manipulation<br>
-• Control flow implementation<br>
-• Memory addressing and iteration<br>
-• Input/Output handling
+All activities were implemented and tested using the <strong>CompSim simulator</strong>, exploring both 
+<strong>low-level computation</strong> and <strong>hardware interaction concepts</strong> such as memory-mapped I/O.
 </p>
 
 <hr>
@@ -58,19 +50,56 @@ lab2/
 
 <h2>🧪 Activities</h2>
 
-<h3>Activity 1</h3>
+<h3>Activity 1 — Conditional Assignment</h3>
 <p>
-Implements a conditional assignment where a variable <strong>m</strong> is updated based on a comparison between <strong>a</strong> and <strong>b</strong>.
+Implements a conditional logic where a variable <strong>m</strong> is updated based on the comparison between 
+<strong>a</strong> and <strong>b</strong>.
 </p>
 
-<h3>Activity 2</h3>
 <p>
-Extends the previous logic by introducing an <strong>if-else structure</strong>, computing either a sum or difference depending on the condition.
+Focus:
 </p>
 
-<h3>Activity 3</h3>
 <p>
-Implements a control flow based on a flowchart:
+• Branch instructions<br>
+• Register comparison<br>
+• Basic control flow
+</p>
+
+<hr>
+
+<h3>Activity 2 — If-Else Structure</h3>
+<p>
+Expands the previous activity by implementing a complete <strong>if-else structure</strong>.
+</p>
+
+<p>
+Depending on the condition:
+</p>
+
+<p>
+• Computes a sum (<strong>a + b</strong>)<br>
+• Or computes a difference (<strong>a - b</strong>)
+</p>
+
+<p>
+Focus:
+</p>
+
+<p>
+• Conditional branching<br>
+• Structured control flow in assembly
+</p>
+
+<hr>
+
+<h3>Activity 3 — Flowchart Implementation</h3>
+<p>
+Translates a flowchart into RISC-V assembly instructions.
+</p>
+
+<p>
+Logic:
 </p>
 
 <p>
@@ -80,73 +109,100 @@ Else:<br>
 → f = g - h
 </p>
 
-<h3>Activity 4</h3>
 <p>
-Focuses on <strong>string output</strong> using loops and memory traversal, demonstrating how to iterate through memory addresses and print characters sequentially.
-</p>
-
-<h3>Activity 5</h3>
-<p>
-Implements a <strong>keyboard input loop (loopback)</strong> that continuously reads characters and echoes them to the output.
+Focus:
 </p>
 
 <p>
-The program is modified to <strong>terminate execution when the character '*'</strong> is detected, requiring the use of 
-<strong>ASCII value comparison</strong> and conditional branching.
+• Mapping high-level logic to assembly<br>
+• Decision structures using branches
 </p>
 
-<h3>Activity 6</h3>
-<p>
-Implements an <strong>input/output control system</strong> in a virtual Arduino environment using GPIO manipulation.
-</p>
+<hr>
 
+<h3>Activity 4 — String Output (Memory Traversal)</h3>
 <p>
-The system behavior:
-</p>
-
-<p>
-• 6 LEDs connected to GPIO pins 2 through 7<br>
-• The system starts with LED on pin 2 turned on<br>
-• When a button is pressed, the current LED turns off and the next one turns on<br>
-• The sequence continues until LED 7, where the system stops
+Implements a loop to iterate through memory and print a string character by character.
 </p>
 
 <p>
-This activity explores <strong>bit shifting operations</strong>, <strong>GPIO control</strong>, and <strong>event-driven logic</strong>.
+Focus:
+</p>
+
+<p>
+• Memory addressing<br>
+• Loop construction<br>
+• Sequential data access
+</p>
+
+<hr>
+
+<h3>Activity 5 — Keyboard Input & Loopback</h3>
+<p>
+Implements a <strong>loopback system</strong> that continuously reads characters from the keyboard and prints them back to the screen.
+</p>
+
+<p>
+The loop is modified to terminate when the character <strong>'*'</strong> is entered.
+</p>
+
+<p>
+Focus:
+</p>
+
+<p>
+• Memory-mapped input/output<br>
+• ASCII value handling<br>
+• Conditional termination<br>
+• Infinite loop control
+</p>
+
+<hr>
+
+<h3>Activity 6 — GPIO Simulation (LED Control)</h3>
+<p>
+Simulates a hardware control system using memory-mapped GPIO within CompSim.
+</p>
+
+<p>
+System behavior:
+</p>
+
+<p>
+• 6 LEDs mapped to GPIO pins (2 to 7)<br>
+• The system starts with the first LED turned on<br>
+• On button press, the active LED shifts to the next position<br>
+• The process continues until the last LED is reached
+</p>
+
+<p>
+Focus:
+</p>
+
+<p>
+• Memory-mapped I/O<br>
+• Bit shifting operations<br>
+• Hardware-level logic simulation<br>
+• Event-driven behavior
 </p>
 
 <hr>
 
 <h2>🚀 How to Run</h2>
 
-<h3>RISC-V Activities (1–5)</h3>
-
 <pre>
 1. Open the CompSim simulator
 
-2. Load one of the .asm files (activity1.asm to activity5.asm)
+2. Load the desired .asm file
 
-3. Assemble the code
-
-4. Run the program
-
-5. Observe register values, memory, and console output
-</pre>
-
-<h3>Arduino Virtual (Activity 6)</h3>
-
-<pre>
-1. Open the Arduino Virtual platform used in the course
-
-2. Load the program corresponding to activity6
-
-3. Connect:
-   - LEDs to GPIO pins 2 through 7
-   - A button as input
+3. Assemble the program
 
 4. Run the simulation
 
-5. Press the button to observe the LED shifting behavior
+5. Observe:
+   - Register values
+   - Memory changes
+   - Console and I/O behavior
 </pre>
 
 <hr>
@@ -161,10 +217,9 @@ This activity explores <strong>bit shifting operations</strong>, <strong>GPIO co
 • Loops and control flow<br>
 • Memory addressing<br>
 • ASCII manipulation<br>
-• Input/Output (I/O) operations<br>
+• Memory-mapped I/O<br>
 • Bitwise and shift instructions<br>
-• GPIO manipulation<br>
-• Event-driven programming
+• GPIO simulation
 </p>
 
 <hr>
@@ -176,7 +231,7 @@ One of the main challenges in this lab was translating high-level logic (pseudo-
 </p>
 
 <p>
-Additional challenges included handling input/output operations, working with ASCII values, and implementing correct control flow using branching instructions.
+Another difficulty was working with <strong>memory-mapped I/O</strong>, especially handling keyboard input, output synchronization, and simulating hardware behavior such as GPIO control.
 </p>
 
 <hr>
