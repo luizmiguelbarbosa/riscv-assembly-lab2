@@ -1,5 +1,5 @@
 <h1 align="center">
-  RISC-V Assembly Lab 2 🧠
+  RISC-V Assembly Lab 2 
 </h1>
 
 <p align="center">
