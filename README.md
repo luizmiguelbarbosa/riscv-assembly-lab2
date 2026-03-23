@@ -8,19 +8,24 @@
 
 <hr>
 
-<h2>👨‍💻 Developers</h2>
+## Developers 🧑‍💻
 
-<p align="center">
-  <a href="https://github.com/luizmiguelbarbosa">
-    <img src="https://avatars.githubusercontent.com/luizmiguelbarbosa" width="100px;" alt="Luiz Miguel Barbosa"/>
-  </a>
-  <a href="https://github.com/gustavocharamba">
-    <img src="https://avatars.githubusercontent.com/gustavocharamba" width="100px;" alt="Gustavo Charamba"/>
-  </a>
-  <br><br>
-  <strong>Luiz Miguel Barbosa</strong> &nbsp;&nbsp;&nbsp;
-  <strong>Gustavo Charamba</strong>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/luizmiguelbarbosa">
+        <img src="https://avatars.githubusercontent.com/luizmiguelbarbosa" width="100px;" alt="Luiz Miguel Barbosa"/><br />
+        <sub><b>Luiz Miguel Barbosa</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/gustavocharamba">
+        <img src="https://avatars.githubusercontent.com/gustavocharamba" width="100px;" alt="Gustavo Charamba"/><br />
+        <sub><b>Gustavo Charamba</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 <hr>
 
