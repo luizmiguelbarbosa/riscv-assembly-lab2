@@ -1,23 +1,22 @@
-addi x20, zero, 1
-addi x21, zero, 128
-sb x20, 1029(x0)
+addi x12, x0, 1
+addi x13, x0, 128
+
+loop:
+sb x12, 1029(x0)
 
 esperar_apertar:
-lb x10, 1028(x0)
-andi x10, x10, 7
-beq x10, x0, esperar_apertar
+lb x14, 1026(x0)
+beq x14, x0, wait_press
 
 esperar_soltar:
-lb x10, 1028(x0)
-andi x10, x10, 7
-bne x10, x0, esperar_soltar
+lb x14, 1026(x0)
+bne x14, x0, wait_release
 
-slli x20, x20, 1
-sb x20, 1029(x0)
+slli x12, x12, 1
+beq x12, x13, fim
 
-beq x20, x21, saida
-jal x0, esperar_apertar
+jal x0, loop
 
-saida:
+fim:
 halt
 
