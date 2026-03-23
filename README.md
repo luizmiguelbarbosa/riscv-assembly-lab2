@@ -8,14 +8,18 @@
 
 <hr>
 
-<h2>👨‍💻 Developer</h2>
+<h2>👨‍💻 Developers</h2>
 
 <p align="center">
   <a href="https://github.com/luizmiguelbarbosa">
-    <img src="https://avatars.githubusercontent.com/luizmiguelbarbosa" width="120px;" alt="Luiz Miguel Barbosa"/>
+    <img src="https://avatars.githubusercontent.com/luizmiguelbarbosa" width="100px;" alt="Luiz Miguel Barbosa"/>
   </a>
-  <br>
-  <strong>Luiz Miguel Barbosa</strong>
+  <a href="https://github.com/gustavocharamba">
+    <img src="https://avatars.githubusercontent.com/gustavocharamba" width="100px;" alt="Gustavo Charamba"/>
+  </a>
+  <br><br>
+  <strong>Luiz Miguel Barbosa</strong> &nbsp;&nbsp;&nbsp;
+  <strong>Gustavo Charamba</strong>
 </p>
 
 <hr>
@@ -56,10 +60,7 @@ Implements a conditional logic where a variable <strong>m</strong> is updated ba
 <strong>a</strong> and <strong>b</strong>.
 </p>
 
-<p>
-Focus:
-</p>
-
+<p><strong>Focus:</strong></p>
 <p>
 • Branch instructions<br>
 • Register comparison<br>
@@ -73,19 +74,13 @@ Focus:
 Expands the previous activity by implementing a complete <strong>if-else structure</strong>.
 </p>
 
-<p>
-Depending on the condition:
-</p>
-
+<p><strong>Behavior:</strong></p>
 <p>
 • Computes a sum (<strong>a + b</strong>)<br>
 • Or computes a difference (<strong>a - b</strong>)
 </p>
 
-<p>
-Focus:
-</p>
-
+<p><strong>Focus:</strong></p>
 <p>
 • Conditional branching<br>
 • Structured control flow in assembly
@@ -98,10 +93,7 @@ Focus:
 Translates a flowchart into RISC-V assembly instructions.
 </p>
 
-<p>
-Logic:
-</p>
-
+<p><strong>Logic:</strong></p>
 <p>
 If <strong>i == j</strong>:<br>
 → f = g + h<br><br>
@@ -109,10 +101,7 @@ Else:<br>
 → f = g - h
 </p>
 
-<p>
-Focus:
-</p>
-
+<p><strong>Focus:</strong></p>
 <p>
 • Mapping high-level logic to assembly<br>
 • Decision structures using branches
@@ -125,10 +114,7 @@ Focus:
 Implements a loop to iterate through memory and print a string character by character.
 </p>
 
-<p>
-Focus:
-</p>
-
+<p><strong>Focus:</strong></p>
 <p>
 • Memory addressing<br>
 • Loop construction<br>
@@ -142,14 +128,12 @@ Focus:
 Implements a <strong>loopback system</strong> that continuously reads characters from the keyboard and prints them back to the screen.
 </p>
 
+<p><strong>Behavior:</strong></p>
 <p>
-The loop is modified to terminate when the character <strong>'*'</strong> is entered.
+• Terminates when the character <strong>'*'</strong> is entered
 </p>
 
-<p>
-Focus:
-</p>
-
+<p><strong>Focus:</strong></p>
 <p>
 • Memory-mapped input/output<br>
 • ASCII value handling<br>
@@ -164,21 +148,15 @@ Focus:
 Simulates a hardware control system using memory-mapped GPIO within CompSim.
 </p>
 
-<p>
-System behavior:
-</p>
-
+<p><strong>System behavior:</strong></p>
 <p>
 • 6 LEDs mapped to GPIO pins (2 to 7)<br>
-• The system starts with the first LED turned on<br>
+• Starts with the first LED turned on<br>
 • On button press, the active LED shifts to the next position<br>
-• The process continues until the last LED is reached
+• Stops when the last LED is reached
 </p>
 
-<p>
-Focus:
-</p>
-
+<p><strong>Focus:</strong></p>
 <p>
 • Memory-mapped I/O<br>
 • Bit shifting operations<br>
@@ -202,7 +180,8 @@ Focus:
 5. Observe:
    - Register values
    - Memory changes
-   - Console and I/O behavior
+   - Console output
+   - I/O behavior (keyboard and GPIO)
 </pre>
 
 <hr>
@@ -237,5 +216,5 @@ Another difficulty was working with <strong>memory-mapped I/O</strong>, especial
 <hr>
 
 <p align="center">
-Developed by Luiz Miguel Barbosa
+Developed by Luiz Miguel Barbosa & Gustavo Charamba
 </p>
