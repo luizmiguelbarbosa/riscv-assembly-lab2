@@ -12,7 +12,7 @@ soma:
 add x3,x1,x2
 
 fim:
-add zero,zero,zero
+halt
 
 a: .word 0x6
 b: .word 0xF
