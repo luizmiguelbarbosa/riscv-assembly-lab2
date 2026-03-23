@@ -13,7 +13,7 @@ soma:
 add x19,x20,x21
 
 fim:
-add zero,zero,zero
+halt
 
 f: .word 0x0000
 g: .word 0x1
